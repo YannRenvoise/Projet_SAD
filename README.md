@@ -1,8 +1,8 @@
-# Système d’Aide à la Décision (SAD)
+# Système d’Aide à la Décision (SAD) - Machine Learning
 ## Diagnostic de Tumeurs Cérébrales par IRM
 Machine Learning – ALIF83 (2025–2026)
 
-Yann Renvoisé, LSI2
+Yann Renvoisé, Aïssa Mehenni, LSI2
 
 ---
 
@@ -42,6 +42,7 @@ Classes :
 
 ## Structure du projet
 
+```text
 Projet_SAD/
 │
 ├── data/ (non versionné – à télécharger séparément)
@@ -65,7 +66,7 @@ Projet_SAD/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+```
 
 ---
 
@@ -74,7 +75,7 @@ Projet_SAD/
 ### Cloner le projet
 
 ```shell
-git clone <url_repo>
+git clone <https://github.com/YannRenvoise/Projet_SAD>
 cd Projet_SAD
 ```
 
@@ -166,10 +167,7 @@ Il ne remplace pas un professionnel de santé.
 
 ---
 
-## Auteur
+## Auteurs
 
-Yann Renvoisé
+Yann Renvoisé, Aïssa Mehenni
 Projet académique – 2025–2026
-
-
-

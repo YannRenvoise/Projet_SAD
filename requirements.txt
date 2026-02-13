@@ -5,5 +5,4 @@ seaborn
 scikit-learn
 torch
 torchvision
-tensorflow
 opencv-python
