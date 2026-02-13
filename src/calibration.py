@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Any, Iterable
+from typing import Any, Dict, Iterable, Sequence
 
 import numpy as np
 
@@ -43,6 +43,100 @@ def calibrate_sklearn_classifier(
 
     calibrator.fit(X_calib, y_calib)
     return CalibratedModel(base_model=model, calibrator=calibrator)
+
+
+def calibrate_with_best_method(
+    model: Any,
+    X_calib: np.ndarray,
+    y_calib: np.ndarray,
+    *,
+    methods: Sequence[str] = ("sigmoid", "isotonic"),
+    eval_split: float = 0.4,
+    random_state: int = 42,
+) -> tuple[CalibratedModel, Dict[str, Dict[str, float]], str]:
+    if not methods:
+        raise ValueError("methods ne peut pas etre vide.")
+    if not (0.0 < eval_split < 1.0):
+        raise ValueError("eval_split doit etre strictement entre 0 et 1.")
+    if len(X_calib) != len(y_calib):
+        raise ValueError("X_calib et y_calib doivent avoir la meme taille.")
+    if len(y_calib) < 2:
+        raise ValueError("y_calib doit contenir au moins 2 echantillons.")
+
+    allowed_methods = {"sigmoid", "isotonic"}
+    unique_methods: list[str] = []
+    seen_methods: set[str] = set()
+    for method in methods:
+        if method not in allowed_methods:
+            raise ValueError(f"method invalide: {method}. Utilise 'sigmoid' ou 'isotonic'.")
+        if method not in seen_methods:
+            unique_methods.append(method)
+            seen_methods.add(method)
+
+    from sklearn.model_selection import train_test_split
+
+    classes, counts = np.unique(y_calib, return_counts=True)
+    n_classes = len(classes)
+    n_samples = len(y_calib)
+    n_eval = int(np.ceil(eval_split * n_samples))
+    n_fit = n_samples - n_eval
+
+    # Split holdout uniquement si chaque classe peut apparaitre dans les deux sous-ensembles.
+    holdout_feasible = (
+        counts.min() >= 2
+        and n_eval >= n_classes
+        and n_fit >= n_classes
+    )
+
+    if holdout_feasible:
+        X_cfit, X_ceval, y_cfit, y_ceval = train_test_split(
+            X_calib,
+            y_calib,
+            test_size=eval_split,
+            random_state=random_state,
+            stratify=y_calib,
+        )
+    else:
+        # Fallback stable: pas de holdout quand le split ne peut pas etre representatif.
+        X_cfit, y_cfit = X_calib, y_calib
+        X_ceval, y_ceval = X_calib, y_calib
+
+    evaluations: Dict[str, Dict[str, float]] = {}
+    best_method = None
+    best_nll = float("inf")
+    best_ece = float("inf")
+
+    for method in unique_methods:
+        calibrated = calibrate_sklearn_classifier(
+            model=model,
+            X_calib=X_cfit,
+            y_calib=y_cfit,
+            method=method,
+        )
+        probs = calibrated.predict_proba(X_ceval)
+        nll = _negative_log_likelihood(probs, y_ceval)
+        ece = expected_calibration_error(probs, y_ceval)
+        evaluations[method] = {
+            "nll": float(nll),
+            "ece": float(ece),
+        }
+
+        better = (nll < best_nll) or (abs(nll - best_nll) <= 1e-8 and ece < best_ece)
+        if better:
+            best_nll = float(nll)
+            best_ece = float(ece)
+            best_method = method
+
+    if best_method is None:
+        raise RuntimeError("Impossible de selectionner une calibration.")
+
+    best_model = calibrate_sklearn_classifier(
+        model=model,
+        X_calib=X_calib,
+        y_calib=y_calib,
+        method=best_method,
+    )
+    return best_model, evaluations, best_method
 
 
 def apply_temperature(logits: np.ndarray, temperature: float) -> np.ndarray:

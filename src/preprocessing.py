@@ -73,8 +73,51 @@ def normalize_0_1(img: np.ndarray) -> np.ndarray:
     return img / 255.0
 
 
-def make_sklearn_features(img: np.ndarray) -> np.ndarray:
-    return img.reshape(-1)
+def make_sklearn_features(
+    img: np.ndarray,
+    *,
+    mode: str = "compact",
+    compact_size: Tuple[int, int] = (96, 96),
+) -> np.ndarray:
+    if mode == "flatten":
+        return img.reshape(-1).astype(np.float32, copy=False)
+
+    if mode != "compact":
+        raise ValueError("mode invalide. Utilise 'compact' ou 'flatten'.")
+
+    import cv2
+
+    gray = img.mean(axis=2).astype(np.float32, copy=False)
+    small = cv2.resize(gray, compact_size, interpolation=cv2.INTER_AREA)
+
+    # Les gradients capturent la texture tumorale mieux qu'un simple flatten RGB.
+    gx = np.diff(small, axis=1, prepend=small[:, :1])
+    gy = np.diff(small, axis=0, prepend=small[:1, :])
+    grad_mag = np.sqrt(gx * gx + gy * gy)
+
+    color_mean = img.mean(axis=(0, 1))
+    color_std = img.std(axis=(0, 1))
+    global_stats = np.array(
+        [
+            float(small.mean()),
+            float(small.std()),
+            float(np.percentile(small, 10)),
+            float(np.percentile(small, 50)),
+            float(np.percentile(small, 90)),
+        ],
+        dtype=np.float32,
+    )
+
+    return np.concatenate(
+        [
+            small.reshape(-1).astype(np.float32, copy=False),
+            grad_mag.reshape(-1).astype(np.float32, copy=False),
+            color_mean.astype(np.float32, copy=False),
+            color_std.astype(np.float32, copy=False),
+            global_stats,
+        ],
+        axis=0,
+    )
 
 
 def build_sklearn_dataset(
@@ -83,6 +126,8 @@ def build_sklearn_dataset(
     *,
     image_size: Tuple[int, int],
     n_per_class: int | None = None,
+    feature_mode: str = "compact",
+    compact_size: Tuple[int, int] = (96, 96),
     shuffle: bool = True,
     random_state: int = 42,
 ) -> Tuple[np.ndarray, np.ndarray, List[Path]]:
@@ -105,7 +150,13 @@ def build_sklearn_dataset(
             except ValueError:
                 skipped += 1
                 continue
-            features.append(make_sklearn_features(img))
+            features.append(
+                make_sklearn_features(
+                    img,
+                    mode=feature_mode,
+                    compact_size=compact_size,
+                )
+            )
             labels.append(class_index)
             used_paths.append(path)
 
@@ -146,6 +197,9 @@ def build_torch_dataloaders_from_imagefolder(
     image_size: Tuple[int, int] = (224, 224),
     batch_size: int = 16,
     val_split: float = 0.2,
+    strong_augmentation: bool = True,
+    normalize_with_imagenet_stats: bool = True,
+    return_class_counts: bool = False,
     random_state: int = 42,
 ):
     try:
@@ -159,18 +213,49 @@ def build_torch_dataloaders_from_imagefolder(
     if not (0.0 < val_split < 1.0):
         raise ValueError("val_split doit etre dans ]0, 1[.")
 
-    train_transform = transforms.Compose(
+    normalize = (
         [
-            transforms.Resize(image_size),
-            transforms.RandomHorizontalFlip(p=0.5),
-            transforms.RandomRotation(degrees=10),
-            transforms.ToTensor(),
+            transforms.Normalize(
+                mean=(0.485, 0.456, 0.406),
+                std=(0.229, 0.224, 0.225),
+            )
         ]
+        if normalize_with_imagenet_stats
+        else []
     )
+
+    if strong_augmentation:
+        train_transform = transforms.Compose(
+            [
+                transforms.RandomResizedCrop(
+                    image_size,
+                    scale=(0.80, 1.0),
+                    ratio=(0.90, 1.10),
+                ),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.RandomRotation(degrees=12),
+                transforms.ColorJitter(
+                    brightness=0.20,
+                    contrast=0.20,
+                ),
+                transforms.ToTensor(),
+                *normalize,
+            ]
+        )
+    else:
+        train_transform = transforms.Compose(
+            [
+                transforms.Resize(image_size),
+                transforms.ToTensor(),
+                *normalize,
+            ]
+        )
+
     eval_transform = transforms.Compose(
         [
             transforms.Resize(image_size),
             transforms.ToTensor(),
+            *normalize,
         ]
     )
 
@@ -215,4 +300,12 @@ def build_torch_dataloaders_from_imagefolder(
         shuffle=False,
         num_workers=0,
     )
+    if return_class_counts:
+        train_targets = np.array(raw_train.targets, dtype=np.int64)[train_indices]
+        class_counts = {
+            raw_train.classes[i]: int((train_targets == i).sum())
+            for i in range(len(raw_train.classes))
+        }
+        return train_loader, val_loader, test_loader, raw_train.classes, class_counts
+
     return train_loader, val_loader, test_loader, raw_train.classes

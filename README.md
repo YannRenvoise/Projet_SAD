@@ -73,6 +73,12 @@ Elements demandes:
 - Metriques metier SAD: `src/evaluation.py`
 - Rapport automatise patient: `src/reporting.py`
 
+Ameliorations v2:
+- features sklearn compactes (texture + gradients + statistiques) pour remplacer le flatten brut.
+- pipelines sklearn avec normalisation + PCA + regularisation.
+- CNN renforce: backbone `custom` ou `resnet18`, class weights, label smoothing, scheduler et early stopping.
+- comparaison automatique des calibrations `sigmoid` / `isotonic`.
+
 ## 5. Execution recommandee
 Le livrable principal est le notebook:
 `notebooks/SAD_brain_tumor.ipynb`
