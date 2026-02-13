@@ -17,6 +17,13 @@ class BusinessMetrics:
     revisions: int
 
 
+@dataclass(frozen=True)
+class ConfidenceOperatingPoint:
+    threshold: float
+    coverage: float
+    accuracy: float
+
+
 def slice_by_confidence(
     y_true: np.ndarray,
     y_pred: np.ndarray,
@@ -97,3 +104,23 @@ def compute_business_metrics(
         fp=fp,
         revisions=revisions,
     )
+
+
+def evaluate_high_confidence_operating_points(
+    y_true: np.ndarray,
+    y_pred: np.ndarray,
+    conf: np.ndarray,
+    *,
+    thresholds: Sequence[float] = (0.85, 0.88, 0.90, 0.92, 0.95),
+) -> Dict[float, ConfidenceOperatingPoint]:
+    out: Dict[float, ConfidenceOperatingPoint] = {}
+    for threshold in thresholds:
+        mask = conf >= threshold
+        coverage = float(mask.mean())
+        accuracy = float((y_true[mask] == y_pred[mask]).mean()) if int(mask.sum()) > 0 else float("nan")
+        out[float(threshold)] = ConfidenceOperatingPoint(
+            threshold=float(threshold),
+            coverage=coverage,
+            accuracy=accuracy,
+        )
+    return out
