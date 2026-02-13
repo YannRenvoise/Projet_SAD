@@ -1,23 +1,24 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Dict, List, Tuple
+from typing import Dict, List, Sequence, Tuple
+
+import numpy as np
 
 
 @dataclass(frozen=True)
 class DecisionThresholds:
-    # Seuils du sujet
     high: float = 0.85
     medium: float = 0.65
     low: float = 0.50
-    notumor_safety: float = 0.95  # seuil spécifique faux négatifs
+    notumor_safety: float = 0.95
 
 
 @dataclass(frozen=True)
 class DecisionOutput:
-    # Sortie décisionnelle
     predicted_class: str
     max_prob: float
+    certainty_level: str
     decision: str
     action: str
     priority: str
@@ -25,23 +26,79 @@ class DecisionOutput:
     attention_notes: List[str]
 
 
+def _softmax(logits: np.ndarray) -> np.ndarray:
+    z = logits - np.max(logits, axis=1, keepdims=True)
+    exp = np.exp(z)
+    return exp / np.sum(exp, axis=1, keepdims=True)
+
+
+def _is_notumor(label: str) -> bool:
+    normalized = label.strip().lower().replace("_", " ").replace("-", " ")
+    return normalized in {"notumor", "no tumor", "pas de tumeur"}
+
+
 def determine_urgency(predicted_class: str) -> str:
-    # Priorité clinique selon classe (conforme au sujet)
     if predicted_class == "glioma":
-        return "URGENT"
+        return "[!] URGENT - Prise en charge sous 12h"
     if predicted_class == "meningioma":
-        return "SURVEILLANCE"
+        return "SURVEILLANCE - Controle programme"
     if predicted_class == "pituitary":
-        return "SPECIALISE"
-    return "RASSURER"
+        return "SPECIALISE - Endocrinologie/Neurochirurgie"
+    return "RASSURER - Validation de routine"
+
+
+def predire_avec_confiance(
+    image: np.ndarray,
+    model,
+    class_names: Sequence[str],
+) -> Tuple[str, Dict[str, float]]:
+    image_array = np.asarray(image, dtype=np.float32)
+    if image_array.ndim == 1:
+        image_array = image_array.reshape(1, -1)
+
+    if hasattr(model, "predict_proba"):
+        probabilities = np.asarray(model.predict_proba(image_array), dtype=np.float64)
+    else:
+        logits = model(image_array)
+        if hasattr(logits, "detach") and hasattr(logits, "cpu") and hasattr(logits, "numpy"):
+            logits = logits.detach().cpu().numpy()
+        logits = np.asarray(logits, dtype=np.float64)
+        if logits.ndim == 1:
+            logits = logits.reshape(1, -1)
+        probabilities = _softmax(logits)
+
+    if probabilities.ndim != 2 or probabilities.shape[0] != 1:
+        raise ValueError("Le modele doit retourner une seule prediction a la fois.")
+    if probabilities.shape[1] != len(class_names):
+        raise ValueError("Le nombre de classes ne correspond pas aux probabilites retournees.")
+
+    probs = probabilities[0]
+    scores_by_class = {
+        class_names[i]: float(probs[i]) for i in range(len(class_names))
+    }
+    predicted_class = max(scores_by_class, key=scores_by_class.get)
+    return predicted_class, scores_by_class
+
+
+def _certainty_level(max_prob: float, thresholds: DecisionThresholds) -> str:
+    if max_prob >= thresholds.high:
+        return "ELEVE [OK]"
+    if max_prob >= thresholds.medium:
+        return "MOYEN [REVISION]"
+    if max_prob >= thresholds.low:
+        return "FAIBLE [REVISION]"
+    return "TRES FAIBLE [ALERTE]"
 
 
 def generer_recommandation(
     probabilities: Dict[str, float],
     thresholds: DecisionThresholds,
 ) -> DecisionOutput:
-    # Applique les règles de décision du sujet
+    if not probabilities:
+        raise ValueError("probabilities ne peut pas etre vide.")
+
     predicted_class, max_prob = max(probabilities.items(), key=lambda kv: kv[1])
+    max_prob = float(max_prob)
     notes: List[str] = []
 
     if max_prob >= thresholds.high:
@@ -65,14 +122,20 @@ def generer_recommandation(
         priority = "Urgente (12h)"
         needs_review = True
 
-    # Tolérance asymétrique faux négatifs
-    if predicted_class == "notumor" and max_prob < thresholds.notumor_safety:
+    if _is_notumor(predicted_class) and max_prob < thresholds.notumor_safety:
         notes.append("Verification obligatoire (risque faux negatif)")
+        action = "Verification obligatoire par radiologue senior"
+        priority = "Elevee (24h)"
         needs_review = True
 
+    if predicted_class == "glioma":
+        notes.append("Suspicion tumeur maligne")
+
+    certainty_level = _certainty_level(max_prob, thresholds)
     return DecisionOutput(
         predicted_class=predicted_class,
-        max_prob=float(max_prob),
+        max_prob=max_prob,
+        certainty_level=certainty_level,
         decision=decision,
         action=action,
         priority=priority,

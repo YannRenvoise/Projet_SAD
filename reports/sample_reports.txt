@@ -1,0 +1,619 @@
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00001 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: meningioma
+Confiance: 92.0%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- meningioma: 92.0%
+- notumor: 8.0%
+- glioma: 0.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: SURVEILLANCE - Controle programme
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Aucun
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00002 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 57.4%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 57.4%
+- meningioma: 37.6%
+- notumor: 5.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00003 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 94.0%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 94.0%
+- meningioma: 6.0%
+- notumor: 0.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00004 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 58.4%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 58.4%
+- meningioma: 24.5%
+- notumor: 17.1%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00005 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 58.6%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 58.6%
+- meningioma: 40.1%
+- notumor: 1.3%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00006 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 72.2%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 72.2%
+- pituitary: 13.9%
+- notumor: 8.0%
+- meningioma: 5.9%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00007 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 71.7%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 71.7%
+- meningioma: 22.0%
+- notumor: 6.3%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00008 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 58.7%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 58.7%
+- meningioma: 34.6%
+- notumor: 6.6%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00009 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: meningioma
+Confiance: 53.9%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- meningioma: 53.9%
+- glioma: 41.8%
+- notumor: 4.3%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Aucun
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00010 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 54.4%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 54.4%
+- meningioma: 39.5%
+- notumor: 6.1%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00011 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 84.4%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 84.4%
+- notumor: 9.5%
+- meningioma: 6.1%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00012 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 85.8%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 85.8%
+- notumor: 8.2%
+- meningioma: 6.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00013 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 67.0%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 67.0%
+- pituitary: 20.8%
+- notumor: 7.3%
+- meningioma: 4.8%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00014 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: meningioma
+Confiance: 50.8%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- meningioma: 50.8%
+- glioma: 49.0%
+- notumor: 0.2%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Aucun
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00015 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: meningioma
+Confiance: 54.0%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- meningioma: 54.0%
+- glioma: 41.9%
+- notumor: 4.1%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Aucun
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00016 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 75.5%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 75.5%
+- pituitary: 21.0%
+- notumor: 3.5%
+- meningioma: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00017 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 71.0%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 71.0%
+- meningioma: 21.8%
+- notumor: 7.2%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00018 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: meningioma
+Confiance: 73.3%
+Niveau de certitude: MOYEN [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- meningioma: 73.3%
+- glioma: 21.2%
+- notumor: 5.6%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic probable - Revision recommandee
+Action: Validation par radiologue junior
+Priorite: Normale (48h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Aucun
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00019 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 90.2%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 90.2%
+- notumor: 9.8%
+- meningioma: 0.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00020 Date: 13/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 60.5%
+Niveau de certitude: FAIBLE [REVISION]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 60.5%
+- meningioma: 20.8%
+- pituitary: 18.8%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Cas incertain
+Action: Revision par radiologue senior
+Priorite: Elevee (24h)
+Revision humaine: Oui - obligatoire
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
