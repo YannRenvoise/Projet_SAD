@@ -264,13 +264,28 @@ def build_torch_dataloaders_from_imagefolder(
     if n_samples == 0:
         raise RuntimeError(f"Aucune image detectee dans {train_dir}.")
 
-    rng = np.random.default_rng(random_state)
-    indices = np.arange(n_samples)
-    rng.shuffle(indices)
-    split_index = int(round((1.0 - val_split) * n_samples))
-    split_index = min(max(split_index, 1), n_samples - 1)
-    train_indices = indices[:split_index].tolist()
-    val_indices = indices[split_index:].tolist()
+    from sklearn.model_selection import train_test_split
+
+    targets = np.array(raw_train.targets, dtype=np.int64)
+    all_indices = np.arange(n_samples)
+    try:
+        train_indices, val_indices = train_test_split(
+            all_indices,
+            test_size=val_split,
+            random_state=random_state,
+            stratify=targets,
+        )
+    except ValueError:
+        # Fallback robuste si un split stratifie est impossible (trop peu
+        # d'echantillons pour au moins une classe).
+        train_indices, val_indices = train_test_split(
+            all_indices,
+            test_size=val_split,
+            random_state=random_state,
+            stratify=None,
+        )
+    train_indices = train_indices.tolist()
+    val_indices = val_indices.tolist()
 
     train_dataset = torch.utils.data.Subset(
         datasets.ImageFolder(str(train_dir), transform=train_transform),

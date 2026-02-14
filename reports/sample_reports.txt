@@ -2,565 +2,7 @@ RAPPORT AUTOMATISE
 ========================================
 RAPPORT D'AIDE A LA DECISION
 ========================================
-Patient ID: P_00001 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.9%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.9%
-- meningioma: 0.0%
-- pituitary: 0.0%
-- notumor: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00002 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 98.4%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 98.4%
-- pituitary: 0.9%
-- meningioma: 0.6%
-- notumor: 0.1%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00003 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.2%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.2%
-- notumor: 0.4%
-- pituitary: 0.3%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00004 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.7%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.7%
-- meningioma: 0.2%
-- notumor: 0.1%
-- pituitary: 0.1%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00005 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 95.6%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 95.6%
-- pituitary: 4.2%
-- meningioma: 0.2%
-- notumor: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00006 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.4%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.4%
-- meningioma: 0.3%
-- pituitary: 0.2%
-- notumor: 0.2%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00007 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 98.8%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 98.8%
-- pituitary: 0.7%
-- meningioma: 0.4%
-- notumor: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00008 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.9%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.9%
-- notumor: 0.0%
-- pituitary: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00009 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.9%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.9%
-- pituitary: 0.1%
-- notumor: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00010 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 97.4%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 97.4%
-- notumor: 2.5%
-- pituitary: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00011 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.6%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.6%
-- pituitary: 0.3%
-- notumor: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00012 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 94.5%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 94.5%
-- pituitary: 3.5%
-- meningioma: 1.9%
-- notumor: 0.1%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00013 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.0%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.0%
-- pituitary: 0.7%
-- notumor: 0.1%
-- meningioma: 0.1%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00014 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.9%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.9%
-- notumor: 0.0%
-- pituitary: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00015 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 67.5%
-Niveau de certitude: MOYEN [REVISION]
-
-SCORES PAR CLASSE
------------------
-- glioma: 67.5%
-- notumor: 31.8%
-- meningioma: 0.5%
-- pituitary: 0.3%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic probable - Revision recommandee
-Action: Validation par radiologue junior
-Priorite: Normale (48h)
-Revision humaine: Oui - obligatoire
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00016 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.1%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.1%
-- pituitary: 0.7%
-- meningioma: 0.2%
-- notumor: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00017 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.7%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.7%
-- pituitary: 0.2%
-- notumor: 0.0%
-- meningioma: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00018 Date: 13/02/2026
-
-PREDICTION PRINCIPALE
----------------------
-Classe: glioma
-Confiance: 99.9%
-Niveau de certitude: ELEVE [OK]
-
-SCORES PAR CLASSE
------------------
-- glioma: 99.9%
-- notumor: 0.0%
-- meningioma: 0.0%
-- pituitary: 0.0%
-
-RECOMMANDATIONS CLINIQUES
---------------------------
-Diagnostic: Diagnostic automatique valide
-Action: Rapport envoye au medecin traitant
-Priorite: [!] URGENT - Prise en charge sous 12h
-Revision humaine: Optionnelle (validation finale)
-
-ELEMENTS D'ATTENTION
----------------------
-- Suspicion tumeur maligne
-========================================
-
-RAPPORT AUTOMATISE
-========================================
-RAPPORT D'AIDE A LA DECISION
-========================================
-Patient ID: P_00019 Date: 13/02/2026
+Patient ID: P_00001 Date: 14/02/2026
 
 PREDICTION PRINCIPALE
 ---------------------
@@ -571,8 +13,163 @@ Niveau de certitude: ELEVE [OK]
 SCORES PAR CLASSE
 -----------------
 - glioma: 99.8%
+- meningioma: 0.1%
 - pituitary: 0.1%
 - notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00002 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- pituitary: 0.1%
+- meningioma: 0.0%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00003 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.8%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.8%
+- meningioma: 0.1%
+- notumor: 0.0%
+- pituitary: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00004 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.7%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.7%
+- meningioma: 0.2%
+- pituitary: 0.0%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00005 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- meningioma: 0.1%
+- pituitary: 0.0%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00006 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- pituitary: 0.0%
+- notumor: 0.0%
 - meningioma: 0.0%
 
 RECOMMANDATIONS CLINIQUES
@@ -591,7 +188,100 @@ RAPPORT AUTOMATISE
 ========================================
 RAPPORT D'AIDE A LA DECISION
 ========================================
-Patient ID: P_00020 Date: 13/02/2026
+Patient ID: P_00007 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.7%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.7%
+- pituitary: 0.1%
+- meningioma: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00008 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.6%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.6%
+- meningioma: 0.2%
+- pituitary: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00009 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.7%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.7%
+- pituitary: 0.1%
+- meningioma: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00010 Date: 14/02/2026
 
 PREDICTION PRINCIPALE
 ---------------------
@@ -603,8 +293,318 @@ SCORES PAR CLASSE
 -----------------
 - glioma: 99.7%
 - meningioma: 0.1%
+- pituitary: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00011 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- meningioma: 0.1%
+- pituitary: 0.1%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00012 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.7%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.7%
+- pituitary: 0.1%
+- meningioma: 0.1%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00013 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- meningioma: 0.1%
+- pituitary: 0.0%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00014 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- pituitary: 0.1%
+- meningioma: 0.0%
+- notumor: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00015 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.8%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.8%
 - notumor: 0.1%
 - pituitary: 0.1%
+- meningioma: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00016 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.8%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.8%
+- meningioma: 0.1%
+- pituitary: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00017 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.8%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.8%
+- meningioma: 0.1%
+- pituitary: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00018 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.9%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.9%
+- pituitary: 0.1%
+- notumor: 0.0%
+- meningioma: 0.0%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00019 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.7%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.7%
+- pituitary: 0.1%
+- meningioma: 0.1%
+- notumor: 0.1%
+
+RECOMMANDATIONS CLINIQUES
+--------------------------
+Diagnostic: Diagnostic automatique valide
+Action: Rapport envoye au medecin traitant
+Priorite: [!] URGENT - Prise en charge sous 12h
+Revision humaine: Optionnelle (validation finale)
+
+ELEMENTS D'ATTENTION
+---------------------
+- Suspicion tumeur maligne
+========================================
+
+RAPPORT AUTOMATISE
+========================================
+RAPPORT D'AIDE A LA DECISION
+========================================
+Patient ID: P_00020 Date: 14/02/2026
+
+PREDICTION PRINCIPALE
+---------------------
+Classe: glioma
+Confiance: 99.6%
+Niveau de certitude: ELEVE [OK]
+
+SCORES PAR CLASSE
+-----------------
+- glioma: 99.6%
+- meningioma: 0.3%
+- pituitary: 0.1%
+- notumor: 0.0%
 
 RECOMMANDATIONS CLINIQUES
 --------------------------

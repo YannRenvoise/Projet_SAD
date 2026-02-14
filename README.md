@@ -177,12 +177,12 @@ Modèle retenu (critère métier) :
 - **CNN-resnet18+TempScaling**
 
 Indicateurs clés du run validé :
-- Accuracy globale (test) : **0.9733**
-- Accuracy haute confiance (`conf > 0.85`) : **0.9886**
-- Couverture automatique : **0.9352**
-- Faux négatifs : **9**
-- Faux positifs : **6**
-- Coût métier : **13850**
+- Accuracy globale (test) : **0.9931**
+- Accuracy haute confiance (`conf > 0.85`) : **0.9969**
+- Couverture automatique : **0.9931**
+- Faux négatifs : **0**
+- Faux positifs : **2**
+- Coût métier : **650**
 
 Conclusion de conformité :
 - le critère professeur `Accuracy@0.85 >= 0.95` est **atteint**.
@@ -208,6 +208,9 @@ Choix pour stabiliser les résultats :
 - seed globale fixée (`SEED = 42`),
 - split de calibration contrôlé,
 - sélection de calibration sur split interne (fit/eval) puis refit final,
+- calibration CNN (temperature scaling) ajustée sur **validation** puis évaluée sur **test**,
+- split train/validation CNN stratifié,
+- `pretrained=True` en mode long pour `resnet18`,
 - protocole identique d'évaluation sur le jeu de test.
 
 Remarque : de légères variations peuvent apparaître selon machine, backend GPU et version des librairies.

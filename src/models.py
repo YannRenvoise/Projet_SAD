@@ -133,14 +133,7 @@ def train_mlp_classifier(
     )
 
 
-def _require_torch():
-    try:
-        import torch
-    except ImportError as exc:
-        raise ImportError(
-            "PyTorch n'est pas installe. Installe les dependances via `pip install -r requirements.txt`."
-        ) from exc
-    return torch
+from . import _require_torch
 
 
 def _resolve_device(device: str | None):
