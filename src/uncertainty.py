@@ -5,14 +5,7 @@ from typing import Dict, List
 import numpy as np
 
 
-def _require_torch():
-    try:
-        import torch
-    except ImportError as exc:
-        raise ImportError(
-            "PyTorch n'est pas installe. Installe les dependances via `pip install -r requirements.txt`."
-        ) from exc
-    return torch
+from . import _require_torch
 
 
 def _activate_dropout_layers(model) -> None:
