@@ -185,7 +185,7 @@ Indicateurs clés du run validé :
 - Coût métier : **650**
 
 Conclusion de conformité :
-- le critère professeur `Accuracy@0.85 >= 0.95` est **atteint**.
+- le critère `Accuracy@0.85 >= 0.95` est **atteint**.
 
 ## Vérification des livrables attendus
 Checklist projet :
