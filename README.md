@@ -6,6 +6,7 @@ Projet académique du module **Machine Learning (ALIF83)** - Année **2025-2026*
 - **Enseignant** : Mohamed HAMIDI
 - **Étudiants** : Aïssa MEHENNI, Yann RENVOISÉ
 - **Sujet** : conception d'un système d'aide à la décision (SAD) en radiologie à partir d'IRM cérébrales
+- **Lien du repository GitHub (publique)** : https://github.com/YannRenvoise/Projet_SAD
 
 ## Résumé du projet
 Ce projet implémente un **pipeline complet d'aide à la décision clinique** pour la classification de tumeurs cérébrales sur IRM.
